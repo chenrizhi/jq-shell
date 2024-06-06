@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jq-shell() {
+jsonq() {
     json=$(cat)
     awk -v json="$json" -v json_orgi="$json" -v key="$1" '
     function strlastchar(s) {
